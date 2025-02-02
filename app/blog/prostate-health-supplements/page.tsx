@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Play, Check, FileText } from 'lucide-react'
+import { ArrowRight, Check,  } from 'lucide-react'
 
 export default function ProstateHealthSupplements() {
   const supplements = [
