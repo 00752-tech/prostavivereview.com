@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     google: 'iLzbuKlYvaD49hrpIMReWRz2DDfCcTDBqYj5ohQAiKM'
   },
   alternates: {
-    canonical: 'https://prostavivereview.com'
+    canonical: baseUrl
   }
 }
 
@@ -42,7 +42,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://prostavivereview.com" />
         {/* Microsoft Clarity Tracking Code */}
         <Script
           id="clarity"
