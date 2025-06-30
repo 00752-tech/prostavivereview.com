@@ -42,7 +42,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Microsoft Clarity Tracking Code */}
         <Script
           id="clarity"
           strategy="afterInteractive"
