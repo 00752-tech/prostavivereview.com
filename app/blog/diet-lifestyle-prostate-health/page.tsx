@@ -42,7 +42,7 @@ export default function DietLifestyleProstateHealth() {
 
       <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-8">
         <Button asChild className="w-full mb-4 bg-blue-600 hover:bg-blue-700">
-          <Link href="https://hop.clickbank.net/?affiliate=smartdiet3&vendor=provive&pid=20&tid=vsl" className="flex items-center justify-center">
+          <Link href="https://a2e71-b0p89p8o8i2j3c643zc2.hop.clickbank.net" className="flex items-center justify-center">
             <Play className="mr-2 h-5 w-5" />
             Watch Video: ProstaVive and Healthy Living
           </Link>
@@ -112,7 +112,7 @@ export default function DietLifestyleProstateHealth() {
             support with its blend of natural, scientifically-backed ingredients.
           </p>
           <Button asChild className="bg-green-600 hover:bg-green-700">
-            <Link href="https://hop.clickbank.net/?affiliate=smartdiet3&vendor=provive&tid=vsl" className="flex items-center">
+            <Link href="https://a2e71-b0p89p8o8i2j3c643zc2.hop.clickbank.net" className="flex items-center">
               Try ProstaVive Risk-Free Today
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
@@ -144,13 +144,13 @@ export default function DietLifestyleProstateHealth() {
         <p className="mb-6">Combine the power of a healthy lifestyle with ProstaVive for comprehensive prostate support</p>
         <div className="grid sm:grid-cols-2 gap-4">
           <Button asChild variant="secondary" className="w-full">
-            <Link href="https://hop.clickbank.net/?affiliate=smartdiet3&vendor=provive&pid=20&tid=vsl" className="flex items-center justify-center">
+            <Link href="https://a2e71-b0p89p8o8i2j3c643zc2.hop.clickbank.net" className="flex items-center justify-center">
               <Play className="mr-2 h-5 w-5" />
               Watch Video Presentation
             </Link>
           </Button>
           <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-            <Link href="https://hop.clickbank.net/?affiliate=smartdiet3&vendor=provive&tid=vsl" className="flex items-center justify-center">
+            <Link href="https://a2e71-b0p89p8o8i2j3c643zc2.hop.clickbank.net" className="flex items-center justify-center">
               Get ProstaVive Now
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
