@@ -6,21 +6,21 @@ import { ArrowRight, Play, Star, Check, FileText } from 'lucide-react'
 export default function ProstaViveSuccessStories() {
   const testimonials = [
     {
-      name: "John D., 62",
+      name: "Jason D., 62",
       location: "Florida",
       rating: 5,
       title: "Life-Changing Results",
       content: "After struggling with frequent nighttime bathroom trips for years, ProstaVive has been a game-changer. Within weeks, I noticed a significant reduction in urgency and improved sleep quality. I feel like I've got my life back!"
     },
     {
-      name: "Michael S., 58",
+      name: "Don S., 58",
       location: "Texas",
       rating: 5,
       title: "Finally Found Relief",
       content: "I've tried numerous prostate supplements, but ProstaVive is the only one that delivered real results. My urinary flow has improved, and I no longer feel constant discomfort. It's been a huge relief, and I highly recommend it to any man dealing with prostate issues."
     },
     {
-      name: "Robert L., 65",
+      name: "Nathan L., 65",
       location: "California",
       rating: 5,
       title: "Impressive Improvement",
@@ -43,7 +43,7 @@ export default function ProstaViveSuccessStories() {
 
       <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-8">
         <Button asChild className="w-full mb-4 bg-blue-600 hover:bg-blue-700">
-          <Link href="https://hop.clickbank.net/?affiliate=smartdiet3&vendor=provive&pid=20&tid=vsl" className="flex items-center justify-center">
+          <Link href="https://a2e71-b0p89p8o8i2j3c643zc2.hop.clickbank.net" className="flex items-center justify-center">
             <Play className="mr-2 h-5 w-5" />
             Watch Video: Real ProstaVive Customer Stories
           </Link>
@@ -140,13 +140,13 @@ export default function ProstaViveSuccessStories() {
         <p className="mb-6">Experience the ProstaVive difference and reclaim your quality of life</p>
         <div className="grid sm:grid-cols-2 gap-4">
           <Button asChild variant="secondary" className="w-full">
-            <Link href="https://hop.clickbank.net/?affiliate=smartdiet3&vendor=provive&pid=20&tid=vsl" className="flex items-center justify-center">
+            <Link href="https://a2e71-b0p89p8o8i2j3c643zc2.hop.clickbank.net" className="flex items-center justify-center">
               <Play className="mr-2 h-5 w-5" />
               Watch Video Presentation
             </Link>
           </Button>
           <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-            <Link href="https://hop.clickbank.net/?affiliate=smartdiet3&vendor=provive&tid=vsl" className="flex items-center justify-center">
+            <Link href="https://a2e71-b0p89p8o8i2j3c643zc2.hop.clickbank.net" className="flex items-center justify-center">
               Try ProstaVive Risk-Free
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
