@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import { CookieConsent } from '@/components/CookieConsent'
@@ -42,6 +43,20 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="canonical" href="https://prostavivereview.com" />
+        {/* Microsoft Clarity Tracking Code */}
+        <Script
+          id="clarity"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "s7ns006vlf");
+            `,
+          }}
+        />
       </head>
       <body>
         <Navigation />
@@ -52,4 +67,3 @@ export default function RootLayout({
     </html>
   )
 }
-
