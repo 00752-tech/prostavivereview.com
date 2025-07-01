@@ -13,54 +13,111 @@ export default function VSLClient() {
   return (
     <>
       {/* HERO SECTION */}
-      {/* HERO SECTION */}
-<section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 min-h-screen flex items-center relative overflow-hidden">
-  {/* Background Effects */}
-  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
-  <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl"></div>
-  <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
-  
-  <div className="container mx-auto px-6 lg:px-8 relative z-10">
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
-      {/* Left: Copy */}
-      <div className="space-y-8">
-        {/* Badge/Indicator */}
-        <div className="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 py-2 text-blue-300 text-sm font-medium">
-          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-          Scientifically Proven Solution
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 min-h-screen flex items-center relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left: Copy */}
+            <div className="space-y-8">
+              {/* Badge/Indicator */}
+              <div className="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 py-2 text-blue-300 text-sm font-medium">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                Scientifically Proven Solution
+              </div>
+              
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight">
+                Are You Tired of
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+                  Constant Bathroom Trips
+                </span>
+                <span className="block text-white">
+                  and Sleepless Nights?
+                </span>
+              </h1>
+              
+              <div className="space-y-4">
+                <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-xl font-light">
+                  Discover the natural breakthrough for prostate health that could change everything.
+                </p>
+                <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
+                  Finally, a scientifically-backed solution that helps men over 40 reclaim their vitality, enjoy uninterrupted sleep, and support optimal prostate function naturally.
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button
+                  onClick={handleCTAClick}
+                  className="group relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-4 px-8 rounded-2xl text-lg shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 cursor-pointer"
+                >
+                  <span className="relative z-10">See Today's Best Price</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </button>
+                
+                <div className="flex items-center gap-2 text-gray-400 text-sm">
+                  <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>180-Day Money-Back Guarantee</span>
+                </div>
+              </div>
+              
+              {/* Stats or Social Proof */}
+              <div className="flex items-center gap-8 pt-8 border-t border-gray-700/50">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-white">10,000+</div>
+                  <div className="text-sm text-gray-400">Satisfied Customers</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-white">180 Days</div>
+                  <div className="text-sm text-gray-400">Money-Back Guarantee</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-white">4.9★</div>
+                  <div className="text-sm text-gray-400">Average Rating</div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Right: Image */}
+            <div className="flex justify-center lg:justify-end relative">
+              <div className="relative">
+                {/* Glow Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-3xl blur-2xl scale-110"></div>
+                
+                {/* Main Image - Larger and No Border */}
+                <div className="relative">
+                  <Image
+                    src="/images/man worried about prostate.png"
+                    alt="Concerned middle-aged man"
+                    width={600}
+                    height={700}
+                    className="relative object-cover max-w-full h-auto drop-shadow-2xl"
+                    style={{
+                      filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))'
+                    }}
+                    priority
+                  />
+                  
+                  {/* Floating Elements */}
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-3 rounded-2xl text-sm font-bold shadow-2xl animate-pulse">
+                    ✓ Natural Solution
+                  </div>
+                  
+                  <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-2xl shadow-2xl backdrop-blur-sm">
+                    <div className="text-2xl font-bold">40+</div>
+                    <div className="text-sm opacity-90">Men Helped</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-          Are You Tired of
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-            Constant Bathroom Trips
-          </span>
-          <span className="block text-white">
-            and Sleepless Nights?
-          </span>
-        </h1>
-        
-        <div className="space-y-4">
-          <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-xl font-light">
-            Discover the natural breakthrough for prostate health that could change everything.
-          </p>
-          <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-            Finally, a scientifically-backed solution that helps men over 40 reclaim their vitality, enjoy uninterrupted sleep, and support optimal prostate function naturally.
-          </p>
-        </div>
-        
-        <div className="flex flex-col sm:flex-row gap-4 pt-4">
-          <button
-            onClick={handleCTAClick}
-            className="group relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-4 px-8 rounded-2xl text-lg shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 cursor-pointer"
-          >
-            <span className="relative z-10">See Today's Best Price</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </button>
-          
-          <div className="flex items-center gap-2 text-gray-400 text-sm">
-            <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414
+      </section>
+
       {/* VSL-STYLE STORYTELLING */}
       <section className="max-w-3xl mx-auto py-12 px-4">
         {/* The Hook */}
@@ -142,7 +199,7 @@ export default function VSLClient() {
               onClick={handleCTAClick}
               className="inline-block bg-green-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-green-700 transition cursor-pointer"
             >
-              YES! Show Me Today’s Best Price
+              YES! Show Me Today's Best Price
             </button>
             <p className="mt-2 text-sm text-gray-600">
               Fast US shipping (3–5 business days) • 180-day money-back guarantee
