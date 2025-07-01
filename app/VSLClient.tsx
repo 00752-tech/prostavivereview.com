@@ -13,45 +13,70 @@ export default function VSLClient() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-12 md:py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            {/* Left: Copy */}
-            <div>
-              <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
-                Are You Tired of Constant Bathroom Trips and Sleepless Nights?
-                <br />
-                <span className="text-blue-700 block">
-                  Discover the Natural Breakthrough for Prostate Health That Could Change Everything.
-                </span>
-              </h1>
-              <p className="text-lg md:text-2xl mb-8 text-left">
-                Finally, a scientifically-backed solution that helps men over 40 reclaim their vitality, enjoy uninterrupted sleep, and support optimal prostate function naturally.
-              </p>
-              <div className="text-left">
-                <button
-                  onClick={handleCTAClick}
-                  className="bg-blue-700 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-blue-800 transition cursor-pointer"
-                >
-                  See Today’s Best Price
-                </button>
-              </div>
+      <section className="bg-gradient-to-b from-blue-50 to-white py-16 md:py-24">
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[500px]">
+      {/* Left: Copy */}
+      <div className="order-2 lg:order-1 space-y-6">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+          Are You Tired of Constant Bathroom Trips and 
+          <span className="block mt-2">Sleepless Nights?</span>
+          <span className="text-blue-700 block mt-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            Discover the Natural Breakthrough for Prostate Health That Could Change Everything.
+          </span>
+        </h1>
+        
+        <p className="text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-2xl">
+          Finally, a scientifically-backed solution that helps men over 40 reclaim their vitality, enjoy uninterrupted sleep, and support optimal prostate function naturally.
+        </p>
+        
+        <div className="pt-4">
+          <button
+            onClick={handleCTAClick}
+            className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-4 px-8 md:px-10 rounded-full text-lg md:text-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200 cursor-pointer"
+          >
+            See Today's Best Price
+          </button>
+          
+          {/* Trust indicators */}
+          <div className="flex items-center gap-4 mt-6 text-sm text-gray-600">
+            <div className="flex items-center gap-1">
+              <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+              <span>180-Day Guarantee</span>
             </div>
-            {/* Right: Image */}
-            <div className="flex justify-center md:justify-end">
-              <Image
-                src="/images/man worried about prostate.png"
-                alt="Concerned middle-aged man"
-                width={400}
-                height={500}
-                className="rounded-xl shadow-lg object-cover"
-                priority
-              />
+            <div className="flex items-center gap-1">
+              <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+              <span>Fast US Shipping</span>
             </div>
           </div>
         </div>
-      </section>
-
+      </div>
+      
+      {/* Right: Image */}
+      <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+        <div className="relative">
+          <div className="absolute inset-0 bg-blue-200 rounded-full blur-3xl opacity-20 scale-110"></div>
+          <Image
+            src="/images/man worried about prostate.png"
+            alt="Concerned middle-aged man"
+            width={450}
+            height={550}
+            className="relative rounded-2xl shadow-2xl object-cover max-w-full h-auto"
+            priority
+          />
+          {/* Optional: Add a subtle overlay or badge */}
+          <div className="absolute -bottom-4 -right-4 bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+            Men 40+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* VSL-STYLE STORYTELLING */}
       <section className="max-w-3xl mx-auto py-12 px-4">
         {/* The Hook */}
