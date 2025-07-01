@@ -18,7 +18,7 @@ export default function VSLClient() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-100/30 to-indigo-100/30"></div>
         <div className="absolute top-20 left-20 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-indigo-200/15 rounded-full blur-3xl"></div>
-        
+
         <div className="container mx-auto px-6 lg:px-16 xl:px-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: Copy with proper margins */}
@@ -28,7 +28,7 @@ export default function VSLClient() {
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 Scientifically Proven Solution
               </div>
-              
+
               <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-gray-900 leading-[1.1] tracking-tight">
                 Are You Tired of
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 font-medium">
@@ -38,7 +38,7 @@ export default function VSLClient() {
                   and Sleepless Nights?
                 </span>
               </h1>
-              
+
               <div className="space-y-4">
                 <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-xl font-light">
                   Discover the natural breakthrough for prostate health that could change everything.
@@ -47,7 +47,7 @@ export default function VSLClient() {
                   Finally, a scientifically-backed solution that helps men over 40 reclaim their vitality, enjoy uninterrupted sleep, and support optimal prostate function naturally.
                 </p>
               </div>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <button
                   onClick={handleCTAClick}
@@ -56,7 +56,7 @@ export default function VSLClient() {
                   <span className="relative z-10">See Today's Best Price</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
-                
+
                 <div className="flex items-center gap-2 text-gray-600 text-base">
                   <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -64,7 +64,7 @@ export default function VSLClient() {
                   <span>180-Day Money-Back Guarantee</span>
                 </div>
               </div>
-              
+
               {/* Stats or Social Proof with more padding */}
               <div className="flex items-center gap-8 pt-12 pb-8 border-t border-gray-200">
                 <div className="text-center">
@@ -81,13 +81,13 @@ export default function VSLClient() {
                 </div>
               </div>
             </div>
-            
+
             {/* Right: Image */}
             <div className="flex justify-center lg:justify-end relative">
               <div className="relative">
                 {/* Glow Effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-200/30 to-indigo-200/30 rounded-3xl blur-2xl scale-110"></div>
-                
+
                 {/* Main Image - Larger and No Border */}
                 <div className="relative">
                   <Image
@@ -101,19 +101,18 @@ export default function VSLClient() {
                     }}
                     priority
                   />
-                  
-                  {/* Floating Elements */}
-                  {/* Floating Elements */}
-                    <div className="absolute top-4 -right-4 bg-gradient-to-r from-green-500 to-blue-600 text-white px-8 py-4 rounded-2xl text-sm font-bold shadow-2xl animate-pulse">
-                        ✓ Natural Solution
-                    </div>
 
-                    <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-6 rounded-2xl shadow-2xl backdrop-blur-sm animate-pulse-slow">
-                        <div className="text-2xl font-bold leading-tight">Men Over</div>
-                        <div className="text-2xl font-bold leading-tight">40</div>
-                    </div>
-
+                  {/* Floating Elements */}
+                  <div className="absolute top-4 -right-4 bg-gradient-to-r from-green-500 to-blue-600 text-white px-8 py-4 rounded-2xl text-sm font-bold shadow-2xl animate-pulse">
+                    ✓ Natural Solution
                   </div>
+
+
+                  <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-6 rounded-2xl shadow-2xl backdrop-blur-sm animate-pulse-slow">
+                    <div className="text-2xl font-bold leading-tight">Men Over</div>
+                    <div className="text-2xl font-bold leading-tight">40</div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -408,7 +407,7 @@ export default function VSLClient() {
           >
             Secure Your ProstaVive Today
           </button>
-          
+
           <p className="text-sm lg:text-base text-blue-200">
             ✓ Fast, discreet shipping (3-5 business days) ✓ Secure encrypted checkout ✓ 180-day satisfaction guarantee
           </p>
@@ -421,12 +420,12 @@ export default function VSLClient() {
           <div className="bg-amber-100 rounded-xl p-6 mb-6">
             <h3 className="text-2xl lg:text-3xl font-medium text-amber-800 mb-2">Limited Availability Notice</h3>
             <p className="text-amber-700 leading-relaxed text-lg lg:text-xl">
-              Due to the premium quality of our ingredients and our commitment to maintaining the highest manufacturing standards, 
+              Due to the premium quality of our ingredients and our commitment to maintaining the highest manufacturing standards,
               ProstaVive is produced in limited batches. This special pricing and bonus package is available only while current inventory lasts.
             </p>
           </div>
           <p className="text-lg lg:text-xl text-gray-700">
-            How much longer will you allow prostate health concerns to impact your quality of life? 
+            How much longer will you allow prostate health concerns to impact your quality of life?
             Take the first step toward reclaiming your comfort, confidence, and vitality.
           </p>
         </div>
