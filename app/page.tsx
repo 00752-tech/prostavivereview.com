@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
+// Remove Script import as it's no longer needed in this file for schemas
 import VSLClient from './VSLClient'
 
 export const metadata: Metadata = {
@@ -7,35 +7,13 @@ export const metadata: Metadata = {
   description: 'Reclaim your nights with ProstaVive. Natural formula supports prostate health, reduces urgency, and boosts sleep for men 40+. Scientifically backed, 180-day guarantee.',
 }
 
-// JSON-LD Schemas
-const homeSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "ProstaVive",
-  "url": "https://www.prostavive.com",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.prostavive.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "ProstaVive",
-  "url": "https://www.prostavive.com",
-  "logo": "https://www.prostavive.com/images/logo.png",
-  "sameAs": [
-    "https://facebook.com/prostavive",
-    "https://twitter.com/prostavive"
-  ]
-}
+// Remove JSON-LD Schemas (homeSchema, organizationSchema) from here
 
 export default function LandingPage() {
   return (
     <main className="bg-white text-gray-900 font-sans">
-      {/* SCHEMA.ORG JSON-LD SCRIPTS */}
+      {/* Remove SCHEMA.ORG JSON-LD SCRIPTS from here */}
+      {/*
       <Script
         id="website-schema"
         type="application/ld+json"
@@ -48,6 +26,7 @@ export default function LandingPage() {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
+      */}
       <VSLClient />
     </main>
   )
