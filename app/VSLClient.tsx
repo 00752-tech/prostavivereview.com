@@ -51,7 +51,9 @@ export default function VSLClient() {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <button
                   onClick={handleCTAClick}
-                  className="group relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-4 px-8 rounded-2xl text-lg shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 cursor-pointer"
+                  className="group relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-4
+                             px-6 sm:px-8 rounded-2xl text-base sm:text-lg // MODIFIED: px-6 for mobile, text-base for mobile
+                             shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 cursor-pointer whitespace-nowrap" // ADDED: whitespace-nowrap
                 >
                   <span className="relative z-10">See Today's Best Price</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
