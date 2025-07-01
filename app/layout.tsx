@@ -1,11 +1,12 @@
+// This is your RootLayout.tsx (or layout.tsx in the app directory)
 import './globals.css'
 import type { Metadata } from 'next'
 import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import { CookieConsent } from '@/components/CookieConsent'
-import Script from 'next/script' // IMPORTANT: Added this import
+import Script from 'next/script' // IMPORTANT: Make sure this import is present
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://prostavivereview.com'
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.prostavive.com' // Changed to www.prostavive.com for schema consistency
 
 export const metadata: Metadata = {
   title: 'ProstaVive: End Frequent Bathroom Trips & Sleep Better Tonight',
@@ -34,6 +35,31 @@ export const metadata: Metadata = {
   }
 }
 
+// JSON-LD Schemas - Defined outside the component for clarity and to avoid re-creation on re-renders
+const homeSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ProstaVive",
+  "url": baseUrl,
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `${baseUrl}/search?q={search_term_string}`,
+    "query-input": "required name=search_term_string"
+  }
+}
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ProstaVive",
+  "url": baseUrl,
+  "logo": `${baseUrl}/images/logo.png`, // Ensure this path is correct relative to your public directory
+  "sameAs": [
+    "https://facebook.com/prostavive", // Replace with actual Facebook URL if available
+    "https://twitter.com/prostavive"   // Replace with actual Twitter URL if available
+  ]
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -42,14 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* The direct <script> tag for Clarity has been removed from here.
-            The `next/script` component below will handle injecting it correctly into the <head>.
-            You can keep this <head> tag if you have other meta tags or links here,
-            otherwise, if it's empty, Next.js might optimize it away.
-        */}
-      </head>
-      <body>
-        {/* Microsoft Clarity Script - Using Next.js's Script component for proper loading */}
+        {/* Microsoft Clarity Script */}
         <Script
           id="microsoft-clarity-script" // A unique ID for this script
           strategy="beforeInteractive" // Ensures the script loads and executes before page hydration
@@ -64,6 +83,23 @@ export default function RootLayout({
           }}
         />
 
+        {/* Schema.org JSON-LD for WebSite */}
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive" // Ensures it's in the initial HTML for SEO parsers
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+        />
+
+        {/* Schema.org JSON-LD for Organization */}
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive" // Ensures it's in the initial HTML for SEO parsers
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
+      <body>
         <Navigation />
         {children}
         <Footer />
