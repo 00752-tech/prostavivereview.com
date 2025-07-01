@@ -108,7 +108,8 @@ export default function VSLClient() {
                   </div>
 
 
-                  <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-6 rounded-2xl shadow-2xl backdrop-blur-sm animate-pulse-slow">
+                  {/* Adjusted "Men Over 40" box positioning */}
+                  <div className="absolute -bottom-10 -left-10 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-6 rounded-2xl shadow-2xl backdrop-blur-sm animate-pulse-slow">
                     <div className="text-2xl font-bold leading-tight">Men Over</div>
                     <div className="text-2xl font-bold leading-tight">40</div>
                   </div>
