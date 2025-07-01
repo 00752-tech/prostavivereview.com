@@ -91,7 +91,7 @@ export default function VSLClient() {
                 {/* Main Image - Larger and No Border */}
                 <div className="relative">
                   <Image
-                    src="/images/Man in hero prostavive customer in blue henley.png"
+                    src="/images/Man in blue henley ordering Prostavive Natural Prostate Supplement.png"
                     alt="Concerned middle-aged man"
                     width={600}
                     height={700}
