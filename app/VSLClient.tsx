@@ -12,47 +12,41 @@ export default function VSLClient() {
     <>
       {/* HERO SECTION */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12 md:py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            {/* Left: Copy */}
-            <div>
-              <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
-                Are You Tired of Constant Bathroom Trips and Sleepless Nights?
-                <br />
-                <span className="text-blue-700 block">
-                  Discover the Natural Breakthrough for Prostate Health That Could Change Everything.
-                </span>
-              </h1>
-              <p className="text-lg md:text-2xl mb-8 text-left">
-                Finally, a scientifically-backed solution that helps men over 40 reclaim their vitality, enjoy uninterrupted sleep, and support optimal prostate function naturally.
-              </p>
-              <div className="text-left">
-                <button
-                  onClick={handleCTAClick}
-                  className="bg-blue-700 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-blue-800 transition cursor-pointer"
-                >
-                  See Today’s Best Price
-                </button>
-              </div>
-            </div>
-            {/* Right: Image */}
-            <div className="flex justify-center md:justify-end">
-              <img
-                src="/home-assets/images/hero-man.jpg" // Replace with your own image path if needed
-                alt="Healthy, confident man"
-                className="w-full max-w-xs md:max-w-sm rounded-xl shadow-lg"
-              />
-              {/* Example fallback image: 
-              <img
-                src="https://pplx-res.cloudinary.com/image/private/user_uploads/21441830/a6542c15-6f05-423c-8362-bac41f351ae3/image.jpg"
-                alt="Healthy, confident man"
-                className="w-full max-w-xs md:max-w-sm rounded-xl shadow-lg"
-              />
-              */}
-            </div>
-          </div>
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-2 gap-8 items-center">
+      {/* Left: Copy */}
+      <div>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
+          Are You Tired of Constant Bathroom Trips and Sleepless Nights?
+          <br />
+          <span className="text-blue-700 block">
+            Discover the Natural Breakthrough for Prostate Health That Could Change Everything.
+          </span>
+        </h1>
+        <p className="text-lg md:text-2xl mb-8 text-left">
+          Finally, a scientifically-backed solution that helps men over 40 reclaim their vitality, enjoy uninterrupted sleep, and support optimal prostate function naturally.
+        </p>
+        <div className="text-left">
+          <button
+            onClick={handleCTAClick}
+            className="bg-blue-700 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-blue-800 transition cursor-pointer"
+          >
+            See Today’s Best Price
+          </button>
         </div>
-      </section>
+      </div>
+      {/* Right: Image */}
+      <div className="flex justify-center md:justify-end">
+        <img
+          src="https://pplx-res.cloudinary.com/image/private/user_uploads/21441830/938a5adc-73e3-4144-8ae0-4b47351184d4/man-worried-about-prostate.jpg"
+          alt="Concerned middle-aged man"
+          className="w-full max-w-xs md:max-w-sm rounded-xl shadow-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* VSL-STYLE STORYTELLING */}
       <section className="max-w-3xl mx-auto py-12 px-4">
