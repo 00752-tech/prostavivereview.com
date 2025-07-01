@@ -1,6 +1,5 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import { CookieConsent } from '@/components/CookieConsent'
@@ -37,10 +36,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Example: Microsoft Clarity Tracking Code */}
-        <Script
-          id="clarity"
-          strategy="afterInteractive"
+        {/* Microsoft Clarity Tracking Code */}
+        <script
+          type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
               (function(c,l,a,r,i,t,y){
