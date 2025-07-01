@@ -107,11 +107,9 @@ export default function VSLClient() {
                     ✓ Natural Solution
                   </div>
 
-
-                  {/* Adjusted "Men Over 40" box positioning */}
-                  <div className="absolute -bottom-10 -left-10 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-6 rounded-2xl shadow-2xl backdrop-blur-sm animate-pulse-slow">
-                    <div className="text-2xl font-bold leading-tight">Men Over</div>
-                    <div className="text-2xl font-bold leading-tight">40</div>
+                  {/* New: Subtle text overlay for target audience */}
+                  <div className="absolute bottom-4 right-4 bg-black bg-opacity-20 backdrop-blur-sm rounded-lg px-3 py-1 text-white text-sm font-medium">
+                    For Men 40+
                   </div>
 
                 </div>
