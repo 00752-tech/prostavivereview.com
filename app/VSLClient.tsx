@@ -107,9 +107,11 @@ export default function VSLClient() {
                     ✓ Natural Solution
                   </div>
                   
-                  <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-4 rounded-2xl shadow-2xl backdrop-blur-sm">
-                    <div className="text-2xl font-bold">Men Over</div>
-                    <div className="text-2xl font-bold">40</div>
+                  <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-5 rounded-2xl shadow-2xl backdrop-blur-sm animate-pulse-slow">
+  <div className="text-2xl font-bold leading-tight">Men Over</div>
+  <div className="text-2xl font-bold leading-tight">40</div>
+</div>
+
                   </div>
                 </div>
               </div>
