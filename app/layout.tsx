@@ -10,13 +10,13 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.prostavive.com'
 
 export const metadata: Metadata = {
   title: 'ProstaVive: End Frequent Bathroom Trips & Sleep Better Tonight',
-  description: 'Reclaim your nights with ProstaVive. Our natural formula supports prostate health, reduces urgency, and promotes restful sleep for men over 40. Scientifically backed. 180-day guarantee.',
+  description: 'Reclaim your nights with ProstaVive. Natural formula supports prostate health, reduces urgency, and boosts sleep for men 40+. Scientifically backed, 180-day guarantee.',
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
     title: 'ProstaVive: End Frequent Bathroom Trips & Sleep Better Tonight',
-    description: 'Reclaim your nights with ProstaVive. Our natural formula supports prostate health, reduces urgency, and promotes restful sleep for men over 40. Scientifically backed. 180-day guarantee.',
+    description: 'Reclaim your nights with ProstaVive. Natural formula supports prostate health, reduces urgency, and boosts sleep for men 40+. Scientifically backed, 180-day guarantee.',
     images: [`${baseUrl}/home-assets/images/product.png`],
     url: baseUrl,
     type: 'website',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'ProstaVive: End Frequent Bathroom Trips & Sleep Better Tonight',
-    description: 'Reclaim your nights with ProstaVive. Our natural formula supports prostate health, reduces urgency, and promotes restful sleep for men over 40. Scientifically backed. 180-day guarantee.',
+    description: 'Reclaim your nights with ProstaVive. Natural formula supports prostate health, reduces urgency, and boosts sleep for men 40+. Scientifically backed, 180-day guarantee.',
     images: [`${baseUrl}/home-assets/images/product.png`],
   },
   verification: {
