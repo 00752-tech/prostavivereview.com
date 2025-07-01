@@ -22,14 +22,14 @@ export default function VSLClient() {
         <div className="container mx-auto px-6 lg:px-16 xl:px-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: Copy with proper margins */}
-            <div className="space-y-8 ml-4 lg:ml-8 xl:ml-12">
-              {/* Badge/Indicator */}
-              <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-blue-200 rounded-full px-6 py-3 text-blue-700 text-base font-medium shadow-lg mb-6">
+            <div className="space-y-6 ml-4 lg:ml-8 xl:ml-12">
+              {/* Badge/Indicator - Kicker Style */}
+              <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-blue-200 rounded-full px-6 py-3 text-blue-700 text-base font-medium shadow-lg">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 Scientifically Proven Solution
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-gray-900 leading-[1.1] tracking-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-gray-900 leading-[1.1] tracking-tight">
                 Are You Tired of
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 font-medium">
                   Constant Bathroom Trips
@@ -108,8 +108,8 @@ export default function VSLClient() {
                   </div>
                   
                   <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-4 rounded-2xl shadow-2xl backdrop-blur-sm">
-                    <div className="text-2xl font-bold">40+</div>
-                    <div className="text-sm opacity-90">Men Helped</div>
+                    <div className="text-2xl font-bold">Men Over</div>
+                    <div className="text-2xl font-bold">40</div>
                   </div>
                 </div>
               </div>
@@ -322,10 +322,10 @@ export default function VSLClient() {
               <div className="flex justify-center">
                 <Image
                   src="https://prostavive.org/home-assets/images/Supplement-Facts.png"
-                  alt="Supplement Facts"
-                  width={400}
-                  height={500}
-                  className="rounded-xl shadow-lg"
+                  alt="Supplement Facts - ProstaVive nutritional information and dosage details"
+                  width={500}
+                  height={650}
+                  className="rounded-xl shadow-lg max-w-full h-auto"
                 />
               </div>
             </div>
@@ -389,10 +389,10 @@ export default function VSLClient() {
           <div className="mb-8">
             <Image
               src="https://prostavive.org/home-assets/images/money-back-guarantee.png"
-              alt="180-Day Money Back Guarantee"
-              width={300}
-              height={150}
-              className="mx-auto mb-4"
+              alt="180-Day Money Back Guarantee - Risk-free trial"
+              width={400}
+              height={200}
+              className="mx-auto mb-4 max-w-full h-auto"
             />
             <p className="text-lg lg:text-xl text-blue-100">
               All backed by our comprehensive <strong className="text-white">180-Day Money-Back Guarantee</strong>
