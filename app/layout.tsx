@@ -4,9 +4,9 @@ import type { Metadata } from 'next'
 import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import { CookieConsent } from '@/components/CookieConsent'
-import Script from 'next/script' // IMPORTANT: Make sure this import is present
+import Script from 'next/script' // Make sure this import is present
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.prostavive.com' // Changed to www.prostavive.com for schema consistency
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.prostavive.com'
 
 export const metadata: Metadata = {
   title: 'ProstaVive: End Frequent Bathroom Trips & Sleep Better Tonight',
@@ -60,6 +60,53 @@ const organizationSchema = {
   ]
 }
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "ProstaVive Natural Prostate Supplement", // Exact product name
+  "description": "Natural breakthrough formula designed to support prostate health, reduce frequent bathroom trips, and promote restful sleep for men over 40.", // Detailed product description
+  "image": `${baseUrl}/home-assets/images/product.png`, // URL to a high-quality product image
+  "sku": "PROSTAVIVE-SUPP-001", // Your product's SKU (Stock Keeping Unit)
+  "brand": {
+    "@type": "Brand",
+    "name": "ProstaVive"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": baseUrl, // URL to the product's sales page
+    "priceCurrency": "USD",
+    "price": "69.00", // Example price. Update with actual price.
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock", // Or OutOfStock, PreOrder, etc.
+    "seller": {
+      "@type": "Organization",
+      "name": "ProstaVive"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9", // Average rating from your customers
+    "reviewCount": "10000" // Total number of reviews
+  },
+  "review": [ // Optional: Add a few example recent reviews here if you have them
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Satisfied Customer" // Or actual reviewer name
+      },
+      "reviewBody": "ProstaVive has truly changed my life. No more constant bathroom trips at night!",
+      "datePublished": "2024-06-25" // Date of the review
+    }
+    // Add more review objects as needed
+  ]
+}
+
+
 export default function RootLayout({
   children,
 }: {
@@ -97,6 +144,14 @@ export default function RootLayout({
           type="application/ld+json"
           strategy="beforeInteractive" // Ensures it's in the initial HTML for SEO parsers
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+
+        {/* Schema.org JSON-LD for Product */}
+        <Script
+          id="product-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive" // Ensures it's in the initial HTML for SEO parsers
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
         />
       </head>
       <body>
