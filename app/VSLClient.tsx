@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 
-const AFFILIATE_URL = 'https://89be9ug1o83v3s3hwa5f1dbuct.hop.clickbank.net/?&traffic_source=pros_review'
+const AFFILIATE_URL = 'https://hop.clickbank.net/?affiliate=007cc&vendor=provive&pid=20&tid=vsl_api_2'
 
 function handleCTAClick(e: React.MouseEvent<HTMLButtonElement>) {
   e.preventDefault()
