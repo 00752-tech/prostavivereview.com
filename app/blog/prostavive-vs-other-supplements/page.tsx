@@ -154,7 +154,7 @@ export default function ProstaviveVsOtherSupplements() {
             </Link>
           </Button>
           <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-            <Link href="https://a2e71-b0p89p8o8i2j3c643zc2.hop.clickbank.net" className="flex items-center justify-center">
+            <Link href="https://hop.clickbank.net/?affiliate=007cc&vendor=provive&pid=20&tid=supps_pg" className="flex items-center justify-center">
               Try ProstaVive Risk-Free
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
