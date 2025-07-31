@@ -86,7 +86,7 @@ export default function VideoTranscript() {
 
       <div className="mt-8">
         <Button asChild>
-          <Link href="https://hop.clickbank.net/?affiliate=007cc&vendor=provive&pid=20&tid=vid_transcript">Try ProstaVive Risk-Free Today</Link>
+          <Link href="https://26de3m62r9dn8y9j2ly8481s3u.hop.clickbank.net/?&traffic_source=prosta_site">Try ProstaVive Risk-Free Today</Link>
         </Button>
       </div>
     </article>
