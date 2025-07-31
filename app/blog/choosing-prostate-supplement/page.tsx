@@ -42,7 +42,7 @@ export default function ChoosingProstateSupplements() {
 
       <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-8">
         <Button asChild className="w-full mb-4 bg-blue-600 hover:bg-blue-700">
-          <Link href="https://hop.clickbank.net/?affiliate=007cc&vendor=provive&pid=20&tid=vsl_pro_supp" className="flex items-center justify-center">
+          <Link href="https://26de3m62r9dn8y9j2ly8481s3u.hop.clickbank.net/?&traffic_source=prosta_site" className="flex items-center justify-center">
             <Play className="mr-2 h-5 w-5" />
             Watch Video: How to Choose the Best Prostate Supplement
           </Link>
@@ -143,13 +143,13 @@ export default function ChoosingProstateSupplements() {
         <p className="mb-6">Discover why thousands of men trust ProstaVive for their prostate health needs</p>
         <div className="grid sm:grid-cols-2 gap-4">
           <Button asChild variant="secondary" className="w-full">
-            <Link href="https://hop.clickbank.net/?affiliate=007cc&vendor=provive&pid=20&tid=vsl_pro_supp" className="flex items-center justify-center">
+            <Link href="https://26de3m62r9dn8y9j2ly8481s3u.hop.clickbank.net/?&traffic_source=prosta_site" className="flex items-center justify-center">
               <Play className="mr-2 h-5 w-5" />
               Watch Video Presentation
             </Link>
           </Button>
           <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-            <Link href="https://hop.clickbank.net/?affiliate=007cc&vendor=provive&pid=20&tid=vsl_pro_supp" className="flex items-center justify-center">
+            <Link href="https://26de3m62r9dn8y9j2ly8481s3u.hop.clickbank.net/?&traffic_source=prosta_site" className="flex items-center justify-center">
               Try ProstaVive Risk-Free
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
